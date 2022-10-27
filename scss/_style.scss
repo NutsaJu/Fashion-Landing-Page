@@ -57,13 +57,21 @@ header{
     @media (max-width:$mobile) {
         background-position: 35%;
     }
-    .main-title-block{
-        max-width: 452px;
-        width: $sizewid;
-        height: 226px;
-        @include d-flex-full (flex,space-between,space-between,wrap,column);
-        background-color: green;
-    }
+    .another-container{
+        @extend %headerwidth;
+        margin-top:15%;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width:$tablet) {
+            justify-content: center;
+        }
+        .main-title-block{
+            max-width: 452px;
+            width: $sizewid;
+            height: 226px;
+            @include d-flex-full (flex,space-between,space-between,wrap,column);
+        }
+    }    
 }
 .main-title-block{
     h3{
@@ -92,6 +100,68 @@ header{
             &:hover{
                 background-color: $white;
                 color: $black;
+                @extend %transition;
+            }
+        }
+    }
+}
+// category page
+.categ-container{
+    @extend %contwidth;
+    margin-top: 120px;
+    height: 584px;
+    @include d-flex-full (flex,space-between,start,wrap,row);
+    @media (max-width:1024px) {
+        height: auto;
+    }
+    @media (max-width:1119px) {
+        justify-content: center;
+    }
+    .categ-left-block{
+        max-width: 559px;
+        width: $sizewid;
+        height: $sizewid;
+        @include d-flex-full(flex,space-between,space-between,wrap,row);
+        align-content: space-between;
+        @media (max-width:530px) {
+            justify-content: center;
+        }
+    }
+
+}
+.categ-left-block{
+    .categ-img{
+        img{
+            &:nth-child(1){
+                max-width: 559px;
+                width: $sizewid;
+            }
+        }
+    }
+}
+.categ-right-block{
+    height: $sizewid;
+    max-width: 559px;
+    width: $sizewid;
+    .categ-img{
+        background-image: url(../images/categ/categ-img2.jpg);
+        background-size: cover;
+        background-position: right;
+        height: 582px;
+        width: $sizewid;
+        @include d-flex(flex,flex-start,flex-end);
+        padding:20px 20px;
+        .categ-title-block{
+            width: 197px;
+            height: 41px;
+            background-color: $lightwhite;
+            @include font ($fontpop,normal,18px,$black);
+            @include d-flex(flex,center,center);
+            @extend %transition;
+            cursor: pointer;
+            &:hover{
+                background-color: $black;
+                color: $lightwhite;
                 @extend %transition;
             }
         }
