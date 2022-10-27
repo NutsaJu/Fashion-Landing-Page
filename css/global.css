@@ -40,6 +40,7 @@ table {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 * {
@@ -78,4 +79,181 @@ a {
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+}
+header .header-container {
+  max-width: 1059px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-title-block .boxs .title-box:hover, .main-title-block .boxs .title-box, header .header-container .nav .nav-ul li:hover, header .header-container .nav .nav-ul li, header .header-container .logo:hover, header .header-container .logo {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+header {
+  padding-top: 26px;
+  margin-bottom: 18px;
+}
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 768px) {
+  header .header-container {
+    padding-inline: 20px;
+  }
+}
+header .header-container .logo {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 29px;
+  color: #22262A;
+  padding: 5px;
+}
+header .header-container .logo:hover {
+  background-color: #22262A;
+  color: #FFFFFF;
+}
+header .header-container .nav {
+  max-width: 637px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  header .header-container .nav {
+    display: none;
+  }
+}
+header .header-container .nav .nav-ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-container .nav .nav-ul li {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 18px;
+  color: #22262A;
+  padding: 5px;
+}
+header .header-container .nav .nav-ul li:hover {
+  background-color: #22262A;
+  color: #FFFFFF;
+}
+header .header-container .burger-icon {
+  display: none;
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  header .header-container .burger-icon {
+    display: block;
+  }
+}
+
+.main-page-container {
+  background-image: url(../images/bg-image.jpg);
+  width: 100%;
+  height: 90vh;
+  background-position: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 768px) {
+  .main-page-container {
+    background-position: 35%;
+  }
+}
+.main-page-container .main-title-block {
+  max-width: 452px;
+  width: 100%;
+  height: 226px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: green;
+}
+
+.main-title-block h3 {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 18px;
+  color: #22262A;
+}
+.main-title-block h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 80px;
+  color: #22262A;
+}
+@media (max-width: 768px) {
+  .main-title-block h1 {
+    font-size: 40px;
+  }
+}
+.main-title-block .boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-title-block .boxs .title-box {
+  max-width: 132px;
+  width: 100%;
+  height: 41px;
+  background-color: #22262A;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.main-title-block .boxs .title-box:nth-child(1) {
+  margin-right: 37px;
+}
+.main-title-block .boxs .title-box:hover {
+  background-color: #FFFFFF;
+  color: #22262A;
 }/*# sourceMappingURL=global.css.map */
