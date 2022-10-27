@@ -208,6 +208,11 @@ header .header-container .burger-icon {
             justify-content: center;
   }
 }
+@media (max-width: 480px) {
+  .main-page-container .another-container {
+    padding-inline: 20px;
+  }
+}
 .main-page-container .another-container .main-title-block {
   max-width: 452px;
   width: 100%;

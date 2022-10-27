@@ -65,6 +65,9 @@ header{
         @media (max-width:$tablet) {
             justify-content: center;
         }
+        @media (max-width:480px) {
+            padding-inline: 20px;
+        }
         .main-title-block{
             max-width: 452px;
             width: $sizewid;
