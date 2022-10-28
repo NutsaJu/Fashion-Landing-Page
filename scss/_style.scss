@@ -114,7 +114,7 @@ header{
     margin-top: 120px;
     height: 584px;
     @include d-flex-full (flex,space-between,start,wrap,row);
-    @media (max-width:1024px) {
+    @media (max-width:1118px) {
         height: auto;
     }
     @media (max-width:1119px) {
@@ -166,6 +166,69 @@ header{
                 background-color: $black;
                 color: $lightwhite;
                 @extend %transition;
+            }
+        }
+    }
+}
+// fashion page
+.fash-container{
+    @extend %contwidth;
+    margin-top: 113px;
+    height: 608px;
+    @media (max-width:1118px) {
+        height: auto;
+    }
+    @media (max-width:1072px) {
+        padding-inline: 200px;
+    }
+    @media (max-width:680px) {
+        padding-inline: 100px;
+    }
+    .fash-title-block{
+        width: $sizewid;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    .shop-container{
+        width: $sizewid;
+        @include d-flex(flex,space-between,center);
+        @include d-flex-full (flex,space-between,center,wrap,row);
+        @media (max-width:680px) {
+            justify-content: center;
+        }
+    }
+}
+.fash-title-block{
+    h3{
+        @include font($fontpop,bold,20px,$black);
+        margin-bottom: 6px;
+    }
+    h4{
+        @include font($fontpop,300,15px,$black);
+    }
+}
+.shop-container{
+    .shop-block{
+        width: 268px;
+        height: 486px;
+        flex-direction: column;
+        @include d-flex(flex,space-between,flex-start);
+        @media (max-width:1072px){
+            margin-top: 20px;
+        }
+        h6{
+            @include font($fontpop,300,12px,$black);
+        }
+        h3{
+            @include font($fontpop,600,15px,$black);
+        }
+        h4{
+            @include font($fontpop,600,15px,$red);
+            text-decoration: none;
+            span{
+                color: $lightblack;
+                font-weight: normal;
+                text-decoration:line-through;
             }
         }
     }
