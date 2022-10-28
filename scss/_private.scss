@@ -11,3 +11,13 @@
 %transition{
     transition: all 500ms ease-in-out;
 }
+%d-flex-for-avone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+%d-flex-for-right-block{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
