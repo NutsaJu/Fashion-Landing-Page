@@ -21,3 +21,9 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
 }
+%d-flex-for-contact{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}

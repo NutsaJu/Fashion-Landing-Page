@@ -323,4 +323,75 @@ header{
             }
         }
     }
-}    
+}
+// contact us page
+.contact-container{
+    max-width: 1006px;
+    width: $sizewid;
+    margin: 0 auto;
+    margin-top: 147px;
+    .contact-title{
+        width: $sizewid;
+        text-align: center;
+        @include font($fontpop,bold,20px,$black);
+    }
+    .contact-wrapper{
+        width: $sizewid;
+        margin-top: 65px;
+        height: 532px;
+        @media (max-width:810px) {
+            height: auto;
+        }
+    }
+}
+.contact-wrapper{
+    .form-wrapper{
+        width: $sizewid;
+        height: $sizewid;
+        @extend %d-flex-for-contact;
+        @media (max-width:810px) {
+            justify-content: center;
+            padding-inline: 20px;
+        }
+        .input-wrapper{
+            max-width: 404px;
+            width: $sizewid;
+            height: 64px;
+            border: 1px solid $lightgrey;
+            border-radius: 6px;
+            padding-left: 15px;
+            margin-bottom: 48px;
+            @include font($fontpop,normal,19px,$grey);
+            &::placeholder{
+                @include font($fontpop,normal,19px,$grey);
+            }
+        }
+        .textarea{
+            width: $sizewid;
+            height: 147px;
+            resize: none;
+            border: 1px solid $lightgrey;
+            border-radius: 6px;
+            padding-left: 15px;
+            @include font($fontpop,normal,19px,$grey);
+            &::placeholder{
+                @include font($fontpop,normal,19px,$grey)
+            }    
+        }
+        .button-wrapper{
+            width: $sizewid;
+            @include d-flex(flex,center,center);
+            margin-top: 79px;
+            .button{
+                width: 203px;
+                height: 63px;
+                border-radius: 31px;
+                background-color: $violet;
+                border: none;
+                @include font($fontpop,bold,20px,$white);
+                cursor: pointer;
+            }
+        }    
+    }
+}
+// footer
