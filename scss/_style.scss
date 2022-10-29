@@ -402,6 +402,7 @@ footer{
     .footer-container{
         @extend %contwidth;
         height: 352px;
+        padding: 10px;
         @include d-flex-full (flex,space-between,center,wrap,row);
         @media (max-width:1044px) {
             height: auto;

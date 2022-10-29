@@ -835,6 +835,7 @@ footer {
 }
 footer .footer-container {
   height: 352px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
