@@ -395,3 +395,155 @@ header{
     }
 }
 // footer
+footer{
+    background-color: $lightblue;
+    margin-top: 74px;
+    padding-top: 117px;
+    .footer-container{
+        @extend %contwidth;
+        height: 352px;
+        @include d-flex-full (flex,space-between,center,wrap,row);
+        @media (max-width:1044px) {
+            height: auto;
+        }
+    }
+    .footer-container-copy{
+        width: $sizewid;
+        height: 82px;
+        background-color: $blue;
+        margin-top: 112px;
+        @include d-flex(flex,center,center);
+        h3{
+            @include font($fontpop,600,20px,$black);
+        }
+    }
+}
+.footer-container{
+    .footer-left-block{
+        max-width: 412px;
+        width: $sizewid;
+        height: $sizewid;
+        padding-bottom: 35px;
+        @include d-flex-full(flex,space-between,space-between,wrap,column);
+    }
+    .footer-right-block{
+        max-width: 612px;
+        width: $sizewid;
+        height: $sizewid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.footer-left-block{
+    .footer-description-block{
+        .footer-logo{
+            @include font($fontpop,bold,22px,$black);
+        }
+        .footer-description{
+            @include font($fontpop,normal,15px,$black);
+            line-height: 18px;
+            margin-top: 12px;
+        }
+    }
+    .footer-contact-block{
+        height: 136px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .address-box{
+            @include font ($fontpop,normal,15px,$black);
+        }
+        .footer-contact-box{
+            display: flex;
+            flex-direction: column;
+            a{
+                @include font ($fontpop,600,15px,$black);
+                &:nth-child(1)::after{
+                    content: " ";
+                    display: block;
+                    width: 134px;
+                    height: 1px;
+                    background-color: $black;
+                    margin: 3px 0px;
+                }
+            }
+        }
+        .footer-icons{
+            width: 148px;
+            height: 29px;
+            @include d-flex(flex,space-between,center);
+        }
+    }
+}
+.footer-right-block{
+    .email-block{
+        h3{
+            @include font($fontpop,bold,22px,$black);
+            margin-left: 10px;
+        }
+        form{
+            .email-form-wrapper{
+                max-width: 602px;
+                width: $sizewid;
+                height: 46px;
+                border: 1px solid $lightgrey;
+                border-radius: 5px;
+                margin-top: 15px;
+                position: relative;
+                .email-input{
+                    position: absolute;
+                    width: $sizewid;
+                    height: $sizewid;
+                    border: none;
+                    border-radius: 5px;
+                    padding-left: 22.5px;
+                    @include font($fontpop,normal,15px,$grey);
+                    &::placeholder{
+                        @include font($fontpop,normal,15px,$grey);
+                    }
+                }
+                .email-btn{
+                    position: absolute;
+                    top: 10px;
+                    right: 21px;
+                    z-index: 2;
+                    border: none;
+                    background-color: inherit;
+                    @include font($fontpop,600,17px,$black);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+.footer-right-block{
+    .list-block{
+        width: $sizewid;
+        height: 181px;
+        padding-right: 10px;
+        @extend %d-flex-for-avone;
+        @media (max-width:1044px) {
+            height: auto;
+            margin-top: 30px;
+            align-items: space-between;
+        }
+        .list-box{
+            h3{
+                @include font($fontpop,600,22px,$black);
+                margin-bottom: 25px;
+            }
+            ul{
+                height: 125px;
+                @extend %d-flex-for-ul;
+                @media (max-width:390px) {
+                    padding: 20px;
+                }
+                li{
+                    @include font($fontpop,normal,15px,$black);
+                }
+            }
+        }
+    }
+}

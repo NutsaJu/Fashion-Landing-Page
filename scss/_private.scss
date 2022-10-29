@@ -27,3 +27,9 @@
     align-content: space-between;
     flex-wrap: wrap;
 }
+%d-flex-for-ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
